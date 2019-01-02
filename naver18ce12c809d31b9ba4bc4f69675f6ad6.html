@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0">
+        <meta name="format-detection" content="telephone=no,address=no,email=no">
+        <title>네이버 웹마스터도구</title>
+        <meta name="description" lang="ko" content="웹마스터도구에서 내 사이트의 검색 반영 정보와 웹 표준 가이드를 확인하세요">
+        <meta property="og:title" content="네이버 웹마스터도구" />
+        <meta property="og:description" content="웹마스터도구에서 내 사이트의 검색 반영 정보와 웹 표준 가이드를 확인하세요" />
+        <meta property="og:image" content="https://ssl.pstatic.net/sstatic/search/webmaster/2017/img/img_info3_v2.png" />
+        <link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/sstatic/search/webmaster/css/webmaster_180405.css">
+                <script type=text/javascript>
+        //<![CDATA[
+        var nsc = "wmt.all";
+        var ccsrv = "cc.naver.com";
+        //]]>
+        </script>
+        <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/search/webmaster/js/clickcr_20140605.js"></script>
+        <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/search/webmaster/js/lcslog_20140605.js"></script>
+        <script type=text/javascript>
+        // for IE8
+        if(typeof String.prototype.trim !== 'function') {
+            String.prototype.trim = function() {
+                return this.replace(/^\s+|\s+$/g, '');
+            }
+        }
+        </script>
+                        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script type="text/javascript">
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "31501add160bd4";
+        wcs_do();
+        </script>
+                        <script type="application/ld+json">
+        {
+         "@context": "https://schema.org",
+         "@type": "Person",
+         "name": "네이버 웹마스터도구",
+         "url": "https://webmastertool.naver.com/",
+         "sameAs": [
+             "https://blog.naver.com/naver_webmaster",
+             "http://tv.naver.com/webmasters"
+         ]
+        }
+        </script>
+                </head>
+        <body onload="var s='';if(s){alert(s);}">
+<!-- skip navigation -->
+<div id="u_skip">
+    <a href="#snb"><span>메뉴 영역으로 바로가기</span></a>
+    <a href="#content"><span>본문 영역으로 바로가기</span></a>
+</div>
+<!-- //skip navigation -->
+<!-- layout -->
+<div id="wrap" class="type_site _webmastertool">
+        <!-- header -->
+        <div id="header">
+            <!-- gnb_wrap -->
+            <div class="gnb_wrap">
+                <div class="gnb_group">
+                    <h1 class="logo_area">
+                        <a href="https://www.naver.com/" class="spwm t_logo" onclick="clickcr(this, 'STA.naver', '', '', event);">NAVER</a>
+                        <a href="/" class="spwm w_logo v1" onclick="clickcr(this, 'STA.wmt', '', '', event);">웹마스터도구</a>
+                    </h1>
+                    <!-- gnb -->
+                                        <div id="gnb" class="gnb_wm">
+                        <strong class="name">sc**** 님</strong>
+                        <ul class="menu">                       
+                            <li><a href="/auth/logout.naver" onclick="clickcr(this, 'GNB.logout', '', '', event);">로그아웃</a></li>
+                        </ul>
+                    </div>
+                                    </div>
+            </div>
+            <!-- //gnb_wrap -->
+                        <!-- header_wrap -->
+            <div class="header_wrap">
+                <div class="header_group">
+                    <div class="notice_area"><p class="txt"><a href="https://blog.naver.com/naver_webmaster/221344460692" target="_blank" class="link" onclick="clickcr(this, 'not.notice', '', '', event);">블로그 문서의 검색 노출 및 RSS 수집 정책 관련 안내</a></p></div>
+                    <a href="https://support.webmastertool.naver.com" class="link_move link_support"><span class="spwm ico_txt" onclick="clickcr(this, 'not.help', '', '', event);"><span class="blind">웹 서포트센터</span></span></a>
+                </div>
+            </div>
+            <!-- //header_wrap -->
+                    </div>
+        <!-- //header -->
+                <script type="text/template" id="_tmpl_legend">
+            {{each aSeries}}
+            <li class="_legendList">
+                <i style="background-color:${style.circle.normal.stroke}">${color}</i>
+                <span>${legend}</span>
+            </li>
+            {{/each}}
+        </script>
+        <script type="text/template" id="_tmpl_tooltip">
+            <div class="tooltip_common_chart tooltip">
+                <div class="tip_area">
+                    {{if sTitle}}
+                    ${sTitle}
+                    {{/if}}
+                    {{each aSeries}}
+                    {{if legend}}
+                    <span style="color:${style.path.normal.stroke}" >${legend}</span>:
+                    {{/if}}
+                    ${numeral(numeric).format("0,0")}{{if approx}}+{{/if}}<br/>
+                    {{/each}}
+                </div>
+                <a href="javascript:;" class="btn_close _close"><span class="spwm">레이어 닫기</span></a>
+            </div>
+        </script>
+        <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/search/webmaster/js/jquery-1.11.3_eg-0.0.2_151130_5.js"></script>
+        <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/search/webmaster/au/pc/nhn.webmastertool_151221.js"></script>
+                        <!-- spot_wrap -->
+        <div class="spot_wrap">
+            <div class="spot_group">
+                <div class="link_area">
+                    <a href="/guide/site_check.naver" class="link" onclick="clickcr(this, 'fst.simplecheck', '', '', event);"><i class="spwm ico_check"></i>사이트 간단 체크</a>
+                    <a href="/board/tool_setting.naver" class="link" onclick="clickcr(this, 'fst.toolsetting', '', '', event);"><i class="spwm ico_tool"></i>도구 설정</a>
+                </div>
+                <h2 class="title_area">연동 사이트 목록</h2>
+            </div>
+        </div>
+        <!-- //spot_wrap -->
+        <!-- container -->
+<div id="container">
+    <div id="content" role="main" data-markup-content="content">
+        <div class="group_site">
+            <div class="group_add">
+                <div class="url_area">
+                    <label for="input1" class="inner">사이트 추가</label>
+                    <div class="bx_area">
+                        <span class="input_area"><input type="text" name="" id="input_site" onfocus="this.value = this.value" placeholder="http://" class="text"></span>
+                        <a href="#" class="btn_common">추가</a>
+                    </div>
+                </div>
+                <p class="guide_text">*최대 <em class="num">100개</em> 사이트를 등록할 수 있습니다.</p>
+            </div>
+                  <div class="group_result">
+            <ul class="list_result">
+                <li class="result">
+                    <div class="remove_area">
+                        <label class="remove_checkbox _check_all"><input type="checkbox"></label>
+                        <a href="#" role="button" class="btn_common_remove">삭제</a>
+                    </div>
+                    <div class="search_area">
+                        <span class="search_text"><input type="text" id="input_search" class="input_text"></span>
+                        <a href="#" role="button" class="btn_search"><span class="spwm ico_search">검색</span></a>
+                    </div>
+                    <ul class="list_sort">
+                        <li class="item _site">
+                            <a href="#" role="button" class="btn_sort spwm_af">정렬</a>
+                            <div class="box_layer">
+                                <a href="#" role="button" class="btn selected" data-sort-site="date">등록순(기본)</a>
+                                <a href="#" role="button" class="btn" data-sort-site="url">이름순</a>
+                                <a href="#" role="button" class="btn" data-sort-site="new">최신순</a>
+                            </div>
+                        </li>
+                        <li class="item _status">
+                            <a href="#" role="button" class="btn_sort spwm_af">상태</a>
+                            <div class="box_layer">
+                                <a href="#" role="button" class="btn selected" data-sort-status="all">전체</a>
+                                <a href="#" role="button" class="btn" data-sort-status="noveri">소유미확인</a>
+                                <a href="#" role="button" class="btn" data-sort-status="veri">소유확인</a>
+                                <a href="#" role="button" class="btn" data-sort-status="expire">만료예정</a>
+                            </div>
+                        </li>
+                        <li class="item _duration">
+                            <a href="#" role="button" class="btn_sort spwm_af">기간</a>
+                            <div class="box_layer">
+                                <a href="#" role="button" class="btn selected" data-sort-duration="all">전체</a>
+                                <a href="#" role="button" class="btn" data-sort-duration="1wk">1주</a>
+                                <a href="#" role="button" class="btn" data-sort-duration="1mo">1개월</a>
+                                <a href="#" role="button" class="btn" data-sort-duration="3mo">3개월</a>
+                                <a href="#" role="button" class="btn" data-sort-duration="6mo">6개월</a>
+                                <a href="#" role="button" class="btn" data-sort-duration="1yr">1년</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                    <li class="result">
+            <div class="remove_area">
+                <label class="remove_checkbox _check_item"><input type="checkbox"></label>
+            </div>
+                        <div class="help_area">다양한 정보를 확인할 수 있도록 소유확인을 진행하세요.
+                <a href="#" class="link_help" onclick="clickcr(this, 'lis.auth', '', '', event); wmt_submit_verify('/board/site_verify.naver', 'init', 'site=https%3A%2F%2Fscvgoe.github.io');">소유확인하기</a>
+            </div>
+            <div class="info_area">
+                <div class="info">
+                    <span class="badge">소유 미확인</span>
+                    <a class="link_url" style="text-decoration: none">https://scvgoe.github.io</a>
+                </div>
+            </div>
+            
+            
+                    </li>
+                    </ul>
+        </div>
+                </div>
+    </div>
+</div>
+<script>
+function wmt_submit_verify(url, action, args)
+{
+    var hidden_form;
+    hidden_form = '<form id="hidden_form" action="' + url + '" method="post">';
+    hidden_form = hidden_form + '<input type="text" name="action" value="' + action + '">';
+    if (args != null) {
+        dict = args.split('=');
+        hidden_form = hidden_form + '<input type="text" name="' + dict[0] + '" value="' + dict[1] + '">';
+    }
+    hidden_form = hidden_form + '</form>';
+
+    $("body").append($(hidden_form).css("display", "none"));
+    $("#hidden_form").submit();
+}
+
+function wmt_submit_expire(url)
+{
+    var params = { "site": url, "action": "expire" };
+    $.ajax({
+        type: "POST",
+        url: "site_verify.naver",
+        data: params,
+        success: function(data){
+            var ret_obj = JSON.parse(data);
+            if (ret_obj.alert != null) {
+                alert(ret_obj.alert);
+            }
+
+            if (ret_obj.redirect_url != null) {
+                window.location=ret_obj.redirect_url;
+                return;
+            }
+        },
+        error : function(data, textStatus, xhr) {
+            var ret = JSON.parse(data.responseText);
+            alert(ret["alert"]);
+        },
+        cache:false
+    });
+}
+
+function wmt_submit_main(action, args, msg) 
+{
+    if (typeof msg !== 'undefined' && confirm(msg) == false) {
+        return;
+    }
+
+    var param = { "action": action };
+    if (action == "insert") {
+        param["site"] = args;
+    } else if (action == "delete") {
+        param["site_list"] =  JSON.stringify(args);
+        param["type"] = JSON.stringify(make_filter());
+    } else if (action == "filter") {
+        param["type"] =  JSON.stringify(args);
+    } else {
+        return;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "main.naver",
+        data: param,
+        success: function(data){
+            if (action == "filter" || action == "delete") {
+                $(".result").slice(1).remove();
+                $(".list_result").append(data);
+                return;
+            }
+
+            var ret_obj = JSON.parse(data);
+            if (ret_obj.alert != null) {
+                alert(ret_obj.alert);
+            }
+
+            if (ret_obj.redirect_url != null) {
+                window.location=ret_obj.redirect_url;
+                return;
+            }
+
+            if (ret_obj.target != null) {
+                wmt_submit_verify(ret_obj.target, ret_obj.action, ret_obj.args);
+            }
+        },
+        error : function(data, textStatus, xhr) {
+            var ret = JSON.parse(data.responseText);
+            alert(ret["alert"]);
+        },
+        cache:false
+    });
+}
+
+function make_filter()
+{
+    $(".btn_common_remove").removeClass("on");
+    $("._check_all>input").prop("checked", false);
+
+    var sort_val = {};
+    $(".list_sort .item").each(function() {
+        if ($(this).data("site")) sort_val["site"] = $(this).data("site");
+        if ($(this).data("status")) sort_val["status"] = $(this).data("status");
+        if ($(this).data("duration")) sort_val["duration"] = $(this).data("duration");
+    });
+
+    var u = $("#input_search").val();
+    sort_val["search"] = u.trim();
+
+    return sort_val;
+}
+
+$("._check_all>input").change(function(e) {
+    clickcr(this, 'lis.all', '', '', e);
+
+    if (this.checked) {
+        $("._check_item>input").prop("checked", true);
+    } else {
+        $("._check_item>input").prop("checked", false);
+    }
+
+    var clen = $('input:checkbox:checked').length;
+    if (clen > 0) {
+        $(".btn_common_remove").addClass("on");
+    } else {
+        $(".btn_common_remove").removeClass("on");
+    }
+});
+
+// for dynamic item
+$(".list_result").on("change", "._check_item>input", function(e) {
+    $("._check_all>input").prop("checked", false);
+    var clen = $('input:checkbox:checked').length;
+    if (clen > 0) {
+        $(".btn_common_remove").addClass("on");
+    } else {
+        $(".btn_common_remove").removeClass("on");
+    }
+});
+
+$(".btn_common").click(function(e){
+    clickcr(this, 'lis.add', '', '', e);
+    var u = $("#input_site").val();
+    wmt_submit_main("insert", encodeURIComponent(u));
+});
+
+$(".btn_common_remove").click(function(e){
+    clickcr(this, 'lis.del', '', '', e);
+
+    var del_obj = $("._check_item>input:checked");
+    if (del_obj.length == 0) return;
+
+    var del_list = [];
+    del_obj.each(function() {
+        var url=$($(this).parents()[2]).find(".info_area .info > a").text();
+        del_list.push(encodeURIComponent(url));
+    });
+
+    var msg = "선택된 사이트를 삭제하시겠습니까?";
+    wmt_submit_main("delete", del_list, msg);
+});
+
+$(".btn_search").click(function(e){
+    clickcr(this, 'lis.search', '', '', e);
+    wmt_submit_main("filter", make_filter());
+});
+
+$(".list_sort .item").click(function(e){
+    var my = $(this).attr("class");
+    $(".list_sort .item").each(function() {
+        if (my == $(this).attr("class")) {
+            $(this).toggleClass("on");
+        } else {
+            $(this).removeClass("on");
+        }
+    });
+
+    var sort_site = $(e.target).attr("data-sort-site");
+    if (sort_site) {
+        $(this).find("a").removeClass("selected");
+        $(e.target).addClass("selected");
+        if (sort_site == "date") {
+            $(this).find("a")[0].text = "정렬";
+        } else {
+            $(this).find("a")[0].text = $(e.target).text();
+        }
+        clickcr(this, 'sort.'+sort_site, '', '', e);
+        $(this).data("site", sort_site);
+        wmt_submit_main("filter", make_filter());
+    }
+
+    var sort_status = $(e.target).attr("data-sort-status");
+    if (sort_status) {
+        $(this).find("a").removeClass("selected");
+        $(e.target).addClass("selected");
+        if (sort_status == "all") {
+            $(this).find("a")[0].text = "상태";
+        } else {
+            $(this).find("a")[0].text = $(e.target).text();
+        }
+        clickcr(this, 'status.'+sort_status, '', '', e);
+        $(this).data("status", sort_status);
+        wmt_submit_main("filter", make_filter());
+    }
+
+    var sort_duration = $(e.target).attr("data-sort-duration");
+    if (sort_duration) {
+        $(this).find("a").removeClass("selected");
+        $(e.target).addClass("selected");
+        if (sort_duration == "all") {
+            $(this).find("a")[0].text = "기간";
+        } else {
+            $(this).find("a")[0].text = $(e.target).text();
+        }
+        clickcr(this, 'period.'+sort_duration, '', '', e);
+        $(this).data("duration", sort_duration);
+        wmt_submit_main("filter", make_filter());
+    }
+});
+
+$('#input_site').on('input',function(e){
+    var u = $("#input_site").val();
+    if (u != "" && u.match("http")) { //시작문자가 한글
+        return;
+    }
+    if (u != "" && !u.match("^h")) {
+        $("#input_site").val("http://" + u);
+    };
+});
+
+$("body").click(function(e){
+    var target = $(e.target).attr("class");
+    if (target != "btn_sort spwm_af") {
+        $(".list_sort .item").removeClass("on");
+    }
+});
+</script>
+<!-- //container -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_group">
+                <a href="https://www.naver.com/rules/service.html" target="_blank" onclick="clickcr(this, 'FOO.rules', '', '', event);">이용약관</a>
+                <span class="bar"></span>
+                <a href="https://www.naver.com/rules/disclaimer.html" target="_blank" onclick="clickcr(this, 'FOO.disclaimer', '', '', event);">책임한계와 법적고지</a>
+                <span class="bar"></span>
+                <a href="https://help.naver.com/support/service/main.nhn?serviceNo=14882" target="_blank" onclick="clickcr(this, 'FOO.help', '', '', event);">고객센터</a>
+                <span class="bar"></span>
+                <a href="https://www.navercorp.com/ko/index.nhn" target="_blank" class="link" onclick="clickcr(this, 'FOO.copyright', '', '', event);">© NAVER Corp.</a>
+            </div>
+        </div>
+        <!-- //footer -->
+        </div>
+<!-- //layout -->
+        <script>
+            (function() {
+                new nhn.webmastertool.Controller({
+                    elBase : $('._webmastertool').first()
+                });
+                            }());
+        </script>
+                <!-- lcs -->
+        <script type="text/javascript"> 
+            lcs_do(); 
+        </script> 
+        <!-- //lcs -->
+        </body>
+</html>
+
