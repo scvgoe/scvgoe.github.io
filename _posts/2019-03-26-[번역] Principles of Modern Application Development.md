@@ -3,7 +3,7 @@ layout: post
 title: '[번역] Principles of Modern Application Development'
 subtitle: 모던 어플리케이션 개발 원칙
 tags: [translate, web, theory]
-image: /img/principles-modern-app-dev-triangle-1.png
+bigimg: /img/principles-modern-app-dev-triangle-1.png
 ---
 
 # 들어가며
