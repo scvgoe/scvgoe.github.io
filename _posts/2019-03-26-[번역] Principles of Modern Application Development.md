@@ -8,7 +8,7 @@ image: /img/principles-modern-app-dev-triangle-1.png
 
 # 들어가며
 
-NGINX 공식 블로그에 업로드 된 원글 [Principles of Modern Application Development](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)을 저자의 허락을 구해 번역해보았습니다. 피드백은 언제나 환영입니다.
+NGINX 공식 블로그에 업로드 된 원글 [Principles of Modern Application Development](https://www.nginx.com/blog/principles-of-modern-application-development/)을 저자의 허락을 구해 번역해보았습니다. 피드백은 언제나 환영입니다.
 
 ---
 ---
