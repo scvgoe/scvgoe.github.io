@@ -26,13 +26,13 @@ NGINX 공식 블로그에 업로드 된 원글 [Principles of Modern Application
 
 이 블로그 포스트가 모던 어플리케이션을 구축하는데에 몇가지 원칙을 정하는데에 도움이 되기를 바랍니다.
 
-원칙들을 구현함으로써, 최근 소프트웨어 개발 트렌드의 장점들을 취할 수도 있게 될 것입니다. 예를 들어, [DevOps](https://www.nginx.com/blog/tag/devops/) 접근 방식을 비롯하여, [도커](https://www.nginx.com/blog/tag/docker/)와 같은 컨테이너, [쿠버네티스](https://www.nginx.com/blog/tag/kubernetes/)와 같은 컨테이너 오케스트레이션 프레임워크, 마이크로서비스, 마이크로서비스를 위한 [service mesh architecture](https://www.nginx.com/blog/what-is-a-service-mesh/) 등의 트렌드 말이죠.
+원칙들을 구현함으로써, 최근 소프트웨어 개발 트렌드의 장점들을 취할 수도 있게 될 것입니다. 예를 들어, [DevOps](https://www.nginx.com/blog/tag/devops/) 접근 방식을 비롯하여, [Docker](https://www.nginx.com/blog/tag/docker/)와 같은 컨테이너, [Kubernetes](https://www.nginx.com/blog/tag/kubernetes/)와 같은 컨테이너 오케스트레이션 프레임워크, 마이크로서비스, 마이크로서비스를 위한 [service mesh architecture](https://www.nginx.com/blog/what-is-a-service-mesh/) 등의 트렌드 말이죠.
 
 # What is a Modern App?
 
 모던 어플리케이션, 모던 스택, `'모던'`이 정확히 무슨 뜻인가요? 우리 모두 대충은 알고 있겠지만, 단어의 정확한 정의를 짚고 넘어가도록 하겠습니다.
 
-모던 어플리케이션이란 여러 종류의 클라이언트를 지원하는 것입니다. 클라이언트가 리액트 자바스크립트 라이브러리이든, 안드로이드나 ios 모바일 앱이든 상관없이 말이죠. 모던 어플리케이션은 미리 정의되지 않은 수 많은 클라이언트들에게 데이터와 서비스를 제공할 수 있어야 합니다.
+모던 어플리케이션이란 여러 종류의 클라이언트를 지원하는 것입니다. 클라이언트가 react javascript library이든, android나 ios 모바일 앱이든 상관없이 말이죠. 모던 어플리케이션은 미리 정의되지 않은 수 많은 클라이언트들에게 데이터와 서비스를 제공할 수 있어야 합니다.
 
 모던 어플리케이션은 데이터와 서비스에 대한 접근을 위해 API를 제공합니다. API는 클라이언트의 종류와 상관없이 일관됩니다. API는 HTTP(S)위에서 동작하며, GUI, CLI를 통해서 모든 기능을 이용할 수 있습니다.
 
