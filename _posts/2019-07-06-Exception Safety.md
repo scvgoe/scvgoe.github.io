@@ -5,9 +5,11 @@ tags: [theory]
 ---
 
 # What is exception safety?
+
 2000년 David Abrahams는 본인의 저서 [Exception-Safety in Generic Components](https://www.boost.org/community/exception_safety.html)에서 Exception safety guarantees라는 개념을 설명했다. Exception safety guarantees란 class library를 구현하는 사람과 clients가 exception handling safety를 검증하는 데에 사용하는 일종의 가이드라인이다.
 
 # Levels of exception safety
+
 Exception safety에는 4가지 수준이 있다. (안전한 순으로 정렬)
 
 1. **No-throw guarantee** (failure transparency): 모든 operation의 성공과 안전성이 보장되는 수준으로 exceptional situation이 발생하면 이것이 내부적으로 처리되며 clients에게 보이지 않고 역시 성공과 안정성이 보장된다.
@@ -17,6 +19,7 @@ Exception safety에는 4가지 수준이 있다. (안전한 순으로 정렬)
 일반적으로 견고한 코드를 위해서는 적어도 basic exception safety 이상의 수준이 요구 된다. 높은 수준의 안전성은 달성하기가 어렵고 부가적인 copy로 인해 overhead가 발생 할 수도 있다. Exception safety의 핵심은 코드의 block (그것이 exceptions 이라도)이 실행 되고 난 뒤에도 프로그램의 실행이 계속됨이 보장되어야 한다는 것이다. 몇몇의 language들은 dispose pattern (with, try-with-resources)를 사용하여 이것들을 간단히 할 수 있도록 했다.
 
 # Example of exception safety
+
 C++의 std::vector나 Java의 ArrayList의 insert 함수를 구현하는 경우를 생각해보자. item x가 vector v에 추가되려고 할 때, vector는 x를 내부 list에 추가하고 count field를 update 해야한다. 이는 새로운 memory의 할당을 필요로 할 수도 있다.
 
 1. **No-throw guarantee**: 구현하기 매우 어렵거나 불가능하다. memory 할당이 실패하여 exception을 던질 수 있기 때문이다. allocation failure를 handling하는 것은 문제가 많다. 계속된 할당 시도는 실패할 확률을 더 높이기 때문이다.
@@ -38,6 +41,7 @@ C++의 std::vector나 Java의 ArrayList의 insert 함수를 구현하는 경우�
 ---
 
 ### 참고
+
 https://en.wikipedia.org/wiki/Exception_safety<br>
 https://msdn.microsoft.com/library/hh279653.aspx<br>
 http://lesstif.tistory.com/entry/RAII-Resource-Acquisition-Is-Initialization<br>
