@@ -6,16 +6,11 @@ subtitle: Hire me
 
 # Work Experience
 -----
-* **[직방](https://www.zigbang.com/company/)** - 2017.07 ~
+* **[직방](https://www.zigbang.com/company/)** - 2017.07 ~ 2019.09
 * **소프트기획** - 2016.11 ~ 2017.07
 * **오리진게임즈** - 2016.08 ~ 2016.11
 * **드라이어드** - 2016.06 ~ 2016.08
 * **KISTI(한국과학기술정보연구원)** - 2014.06 ~ 2014.08
-
-# Skills
------
-* Python, Javascript, Typescript
-* Amazon Web Service
 
 # Education
 -----
