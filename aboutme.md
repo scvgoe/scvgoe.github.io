@@ -4,21 +4,8 @@ title: About me
 subtitle: Hire me
 ---
 
-# Work Experience
------
-* **[직방](https://www.zigbang.com/company/)** - 2017.07 ~ 2019.09
-* **소프트기획** - 2016.11 ~ 2017.07
-* **오리진게임즈** - 2016.08 ~ 2016.11
-* **드라이어드** - 2016.06 ~ 2016.08
-* **KISTI(한국과학기술정보연구원)** - 2014.06 ~ 2014.08
+반갑습니다! 제 블로그에 오신 걸 환영합니다.
 
-# Education
------
-* **KAIST 전산학부** - 2013.03~2020.08
-* **MadCamp @ KAIST** - 2015.12~2016.01
-* **University of California, Santa Cruz** - 2015.07~2015.08
-* **미추홀외국어고등학교** - 2010.03~2013.02
+제 레쥬메는 [여기](/resume.pdf)서 확인하실 수 있습니다.
 
-# Contact
------
-scvgoe@gmail.com
+감사합니다.
